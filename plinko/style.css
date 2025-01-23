@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#gameContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  color: #4CAF50;
+}
+
+#gameControls, #gameBoard {
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#plinkoCanvas {
+  background-color: #1e1e1e;
+  width: 100%;
+  max-height: 500px;
+}
+
+#boardInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#resultText {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.required {
+  color: red;
+}

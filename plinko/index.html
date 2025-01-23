@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plinko Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <header>
+      <h1>Plinko Game</h1>
+    </header>
+
+    <main>
+      <div id="gameControls">
+        <label for="amount">Bet Amount <span class="required">*</span></label>
+        <input type="number" id="amount" placeholder="Enter Bet Amount" required>
+
+        <label for="rows">Number of Rows <span class="required">*</span></label>
+        <select id="rows">
+          <option value="8">8 Rows</option>
+          <option value="12">12 Rows</option>
+          <option value="16">16 Rows</option>
+        </select>
+
+        <button id="startBtn" onclick="startGame()">Start Game</button>
+      </div>
+
+      <div id="gameBoard" class="hidden">
+        <canvas id="plinkoCanvas"></canvas>
+        <div id="boardInfo">
+          <span>Bet: ₹<span id="currentBet">0</span></span>
+          <span>Multiplier: <span id="currentMultiplier">1.00x</span></span>
+        </div>
+        <button id="dropBallBtn" onclick="dropBall()" class="hidden">Drop Ball</button>
+      </div>
+
+      <div id="resultMessage" class="hidden">
+        <p id="resultText"></p>
+        <div id="navigationButtons" class="hidden">
+          <button onclick="restartGame()">Play Again</button>
+          <button onclick="goHome()">Home</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

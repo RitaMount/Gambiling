@@ -1,0 +1,94 @@
+/* crash-game/style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+#gameContainer {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#gameControls {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+.required {
+  color: red;
+}
+
+#multiplierGraph {
+  width: 100%;
+  height: 300px;
+  background-color: #1e1e1e;
+}
+
+#multiplierValue {
+  font-size: 2em;
+  color: #4CAF50;
+}
+
+#cashoutContainer {
+  margin-top: 20px;
+}
+
+#resultMessage {
+  margin-top: 20px;
+}
+
+#resultText {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#navigationButtons {
+  margin-top: 20px;
+}
+
+#navigationButtons button {
+  margin: 0 10px;
+  background-color: #4CAF50;
+}

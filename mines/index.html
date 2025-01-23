@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mines Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <header>
+      <h1>Mines Game</h1>
+    </header>
+
+    <main>
+      <div id="gameControls">
+        <label for="amount">Bet Amount <span class="required">*</span></label>
+        <input type="number" id="amount" placeholder="Enter Bet Amount" required>
+
+        <label for="mines">Number of Mines <span class="required">*</span></label>
+        <input type="number" id="mines" placeholder="Number of Mines (1-24)" min="1" max="24" required>
+
+        <button id="startBtn" onclick="startGame()">Start Game</button>
+      </div>
+
+      <div id="gameBoard" class="hidden">
+        <div id="boardInfo">
+          <span>Bet: ₹<span id="currentBet">0</span></span>
+          <span>Multiplier: <span id="currentMultiplier">1.00x</span></span>
+        </div>
+        <div id="grid"></div>
+        <button id="cashoutBtn" onclick="cashOut()" class="hidden">Cash Out</button>
+      </div>
+
+      <div id="resultMessage" class="hidden">
+        <p id="resultText"></p>
+        <div id="navigationButtons" class="hidden">
+          <button onclick="restartGame()">Play Again</button>
+          <button onclick="goHome()">Home</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
