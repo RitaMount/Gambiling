@@ -47,9 +47,9 @@ button:hover {
 }
 
 #plinkoCanvas {
-  background-color: #1e1e1e;
   width: 100%;
-  max-height: 500px;
+  max-height: 600px;
+  background-color: #1e1e1e;
 }
 
 #boardInfo {
