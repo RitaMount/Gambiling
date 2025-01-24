@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#gameContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  color: #4CAF50;
+}
+
+#gameControls, #gameBoard {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#doorsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.door {
+  width: 30%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.door img {
+  width: 100%;
+  height: auto;
+}
+
+.door:hover {
+  transform: scale(1.05);
+}
+
+#resultMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+#resultText {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.required {
+  color: red;
+}
